@@ -99,8 +99,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
-    SubTitle = "by dawid",
+    Title = "FloppaHub " .. Fluent.Version,
+    SubTitle = "by elgeow",
     TabWidth = 50,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
@@ -952,7 +952,7 @@ local Pociones = Tabs.Brew:AddDropdown("Potions", {
     end
 })
 
-local Toggle = Tabs.Dupe:AddToggle("Potions", {Title = "Enable Auto Brew", Default = false })
+local Toggle = Tabs.Brew:AddToggle("Potions", {Title = "Enable Auto Brew", Default = false })
 
 Toggle:OnChanged(function(state)
     getgenv().AutoBrew = state  -- Usa el estado del toggle para activar o desactivar
